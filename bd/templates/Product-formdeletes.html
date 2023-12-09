@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Product form</title>
+    <link rel="stylesheet" href="{% static 'css/nicepage4.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'css/Product-formdelete.css' %}" media="screen">
+    <meta name="generator" content="Nicepage 6.0.3, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/LRcFmSWIwJ4.jpg"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Product form">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-header" id="sec-3730"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="487" data-image-height="160">
+          <img src="{% static 'css/images/LRcFmSWIwJ4.jpg' %}" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
+            <a class="u-button-style u-custom-border u-custom-border-color u-custom-borders u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-20 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="Product-form.html" style="padding: 10px;">Удаление продукта</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Product-form.html">Удаление продукта</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-clearfix u-grey-5 u-section-1" id="sec-f5c7">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-size-27-lg u-size-27-md u-size-27-sm u-size-27-xs u-size-3-xl">
+                <div class="u-layout-col">
+                  <div class="u-container-style u-layout-cell u-left-cell u-size-60 u-layout-cell-1">
+                    <div class="u-container-layout u-valign-middle u-container-layout-1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-33-lg u-size-33-md u-size-33-sm u-size-33-xs u-size-57-xl">
+                <div class="u-layout-col">
+                  <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
+                    <div class="u-container-layout u-container-layout-2">
+                      <p class="u-text u-text-default u-text-1">Удалите продукт</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-3">
+                    <div class="u-container-layout u-valign-top u-container-layout-3">
+                      <div class="u-form u-form-1">
+                        <form action="{% url 'product-delete' %}" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form-4">
+                                  {% csrf_token %}
+                            <div class="u-form-group u-form-select u-label-left u-form-group-1">
+                            <label for="select-7ff4" class="u-label">Название</label>
+                            <div class="u-form-select-wrapper">
+                              <select id="select-7ff4" name="productname" class="u-input u-input-rectangle">
+                                  {% for p in product %}
+                                  <option value="{{p.id}}" data-calc="">{{p.productname}} </option>
+                                  {% endfor %}
+                              </select>
+                              <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+                            </div>
+                          </div>
+                          <div class="u-align-left u-form-group u-form-submit">
+                            <button type="submit" class="u-btn u-btn-submit u-button-style u-palette-2-base u-btn-1">Удалить</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-5f18"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">MADE BY Ivanov Ilya UwU<br>
+        </p>
+      </div></footer>
+  
+</body></html>

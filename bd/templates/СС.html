@@ -7,12 +7,11 @@
     <meta name="description" content="">
     <title>СС</title>
     <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
-<link rel="stylesheet" href="{% static 'css/base.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'css/СС.css' %}" media="screen">
     <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
     <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
     <meta name="generator" content="Nicepage 6.0.3, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    
     
     
     
@@ -41,7 +40,7 @@
           </div>
           <div class="u-custom-menu u-nav-container">
             <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Главная.html" style="padding: 10px 20px;">Главная</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="СС.html">Товары</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">Компании</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">СС</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">Заказы</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">Пользователи</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">Статусы</a>
@@ -57,8 +56,8 @@
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="">Главная</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#carousel_132a">Товары</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Компании</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Главная.html">Главная</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="СС.html">Товары</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">СС</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link">Заказы</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link">Пользователи</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link">Статусы</a>
@@ -74,12 +73,12 @@
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-        <img class="u-image u-image-contain u-image-round u-radius u-image-1" src="static/css/img/LRcFmSWIwJ4.jpg" alt="" data-image-width="487" data-image-height="160">
+        <img class="u-image u-image-contain u-image-round u-radius u-image-1" src="static/css/images/LRcFmSWIwJ4.jpg" alt="" data-image-width="487" data-image-height="160">
       </div></header>
   <section class="u-align-center u-clearfix u-image u-section-1" id="carousel_132a">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-table u-table-responsive u-table-1">
-          <table class="u-table-entity u-table-entity-1">
+          <table class="u-table-entity-1">
             <colgroup>
               <col width="7.1%">
               <col width="33.5%">
@@ -98,7 +97,7 @@
             </thead>
             <tbody class="u-table-alt-palette-1-light-3 u-table-body">
              {% for p in product %}
-              <tr style="height: 27px;">
+              <tr style="height: 60px;">
                 <td class="u-table-cell">{{p.id}}</td>
                 <td class="u-table-cell">{{p.productname}}</td>
                 <td class="u-table-cell">{{p.companyid.company}}</td>
@@ -108,11 +107,69 @@
              {% endfor %}
             </tbody>
           </table>
+          <div class="u-clearfix u-group-elements u-group-elements-1" style ="
+    top: -100;
+    top: -100;
+    left: 280px;
+    top: auto;
+    bottom: 405px;"
+>
+          <a href="http://127.0.0.1:8010/createproduct" class="u-border-none u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-4-base u-btn-1">Добавить</a>
+          <a href="http://127.0.0.1:8010/addproduct" class="u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">Редактировать</a>
+          <a href="http://127.0.0.1:8010/productdelete" class="u-btn u-button-style u-custom-item u-hover-palette-2-dark-1 u-palette-2-base u-btn-3">Удалить</a>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-image u-section-1" id="sec-e41c" data-image-width="2520" data-image-height="1418">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-table u-table-responsive u-table-1">
+          <table class="u-table-entity u-table-entity-1">
+            <colgroup>
+              <col width="7.8%">
+              <col width="25.9%">
+              <col width="20.4%">
+              <col width="12.3%">
+              <col width="16.6%">
+              <col width="17%">
+            </colgroup>
+            <thead class="u-black u-table-header u-table-header-1">
+              <tr>
+                <th class="u-table-cell">ID</th>
+                <th class="u-table-cell">Продукт</th>
+                <th class="u-table-cell">Пользователь</th>
+                <th class="u-table-cell">Статус</th>
+                <th class="u-table-cell">Дата создания</th>
+                <th class="u-table-cell">Дата завершения</th>
+              </tr>
+            </thead>
+            <tbody class="u-table-alt-palette-1-light-3 u-table-body">
+             {% for o in order %}
+              <tr style="height: 27px;">
+                <td class="u-table-cell">{{o.id}}</td>
+                <td class="u-table-cell">{{o.productid.productname}}</td>
+                <td class="u-table-cell">{{o.userid.email}}</td>
+                <td class="u-table-cell">{{o.statusid.status}}</td>
+                <td class="u-table-cell">{{o.datecreated}}</td>
+                {% if o.dateend is none %}
+                <td class="u-table-cell">-</td>
+                {% else %}
+                <td class="u-table-cell">{{o.dateend}}</td>
+                {% endif %}
+              </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <div class="u-clearfix u-group-elements u-group-elements-1">
+          <a href="http://127.0.0.1:8010/addproduct" class="u-border-none u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-4-base u-btn-1">Добавить</a>
+          <a href="https://nicepage.com/html5-template" class="u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">Редактировать</a>
+          <a href="https://nicepage.com/html5-template" class="u-btn u-button-style u-custom-item u-hover-palette-2-dark-1 u-palette-2-base u-btn-3">Удалить</a>
         </div>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-image u-section-2" id="sec-a9fb">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-table u-table-responsive u-table-1">
           <table class="u-table-entity u-table-entity-1">
             <colgroup>
@@ -138,53 +195,15 @@
             </tbody>
           </table>
         </div>
-      </div>
-    </section>
-    <section class="u-align-center u-clearfix u-image u-section-3" id="sec-e41c">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="u-table u-table-responsive u-table-1">
-          <table class="u-table-entity u-table-entity-1">
-            <colgroup>
-              <col width="7.8%">
-              <col width="25.9%">
-              <col width="20.4%">
-              <col width="12.3%">
-              <col width="16.6%">
-              <col width="17%">
-            </colgroup>
-            <thead class="u-black u-table-header u-table-header-1">
-              <tr>
-                <th class="u-table-cell">ID</th>
-                <th class="u-table-cell">Продукт</th>
-                <th class="u-table-cell">Пользователь</th>
-                <th class="u-table-cell">Статус</th>
-                <th class="u-table-cell">Дата создания</th>
-                <th class="u-table-cell">Дата завершения</th>
-              </tr>
-            </thead>
-            <tbody class="u-table-alt-palette-1-light-3 u-table-body">
-            {% for o in order %}
-              <tr style="height: 27px;">
-                <td class="u-table-cell">{{o.id}}</td>
-                <td class="u-table-cell">{{o.productid.productname}}</td>
-                <td class="u-table-cell">{{o.userid.email}}</td>
-                <td class="u-table-cell">{{o.statusid.status}}</td>
-                <td class="u-table-cell">{{o.datecreated}}</td>
-                {% if o.dateend is none %}
-                <td class="u-table-cell">-</td>
-                {% else %}
-                <td class="u-table-cell">{{o.dateend}}</td>
-                {% endif %}
-              </tr>
-            {% endfor %}
-
-            </tbody>
-          </table>
+        <div class="u-clearfix u-group-elements u-group-elements-1">
+          <a href="https://nicepage.com/html5-template" class="u-border-none u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-4-base u-btn-1">Добавить</a>
+          <a href="https://nicepage.com/html5-template" class="u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">Редактировать</a>
+          <a href="https://nicepage.com/html5-template" class="u-btn u-button-style u-custom-item u-hover-palette-2-dark-1 u-palette-2-base u-btn-3">Удалить</a>
         </div>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-image u-section-4" id="sec-ca9c">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <section class="u-align-center u-clearfix u-image u-section-3" id="sec-ca9c">
+      <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-table u-table-responsive u-table-1">
           <table class="u-table-entity u-table-entity-1">
             <colgroup>
@@ -206,7 +225,7 @@
               </tr>
             </thead>
             <tbody class="u-table-alt-palette-1-light-3 u-table-body">
-            {% for u in user %}
+              {% for u in user %}
               <tr style="height: 27px;">
                 <td class="u-table-cell">{{u.id}}</td>
                 <td class="u-table-cell">{{u.lastname}}</td>
@@ -219,10 +238,15 @@
             </tbody>
           </table>
         </div>
+        <div class="u-clearfix u-group-elements u-group-elements-1">
+          <a href="https://nicepage.com/html5-template" class="u-border-none u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-4-base u-btn-1">Добавить</a>
+          <a href="https://nicepage.com/html5-template" class="u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">Редактировать</a>
+          <a href="https://nicepage.com/html5-template" class="u-btn u-button-style u-custom-item u-hover-palette-2-dark-1 u-palette-2-base u-btn-3">Удалить</a>
+        </div>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-image u-section-5" id="sec-9e39">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <section class="u-align-center u-clearfix u-image u-section-4" id="sec-9e39">
+      <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-table u-table-responsive u-table-1">
           <table class="u-table-entity u-table-entity-1">
             <colgroup>
@@ -241,7 +265,7 @@
               </tr>
             </thead>
             <tbody class="u-table-alt-palette-1-light-3 u-table-body">
-            {% for s in stock %}
+             {% for s in stock %}
               <tr style="height: 27px;">
                 <td class="u-table-cell">{{s.id}}</td>
                 <td class="u-table-cell">{{s.model}}</td>
@@ -252,10 +276,15 @@
             </tbody>
           </table>
         </div>
+        <div class="u-clearfix u-group-elements u-group-elements-1">
+          <a href="https://nicepage.com/html5-template" class="u-border-none u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-4-base u-btn-1">Добавить</a>
+          <a href="https://nicepage.com/html5-template" class="u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">Редактировать</a>
+          <a href="https://nicepage.com/html5-template" class="u-btn u-button-style u-custom-item u-hover-palette-2-dark-1 u-palette-2-base u-btn-3">Удалить</a>
+        </div>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-image u-section-6" id="sec-3f30">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <section class="u-align-center u-clearfix u-image u-section-5" id="sec-3f30">
+      <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-table u-table-responsive u-table-1">
           <table class="u-table-entity u-table-entity-1">
             <colgroup>
@@ -274,7 +303,7 @@
               </tr>
             </thead>
             <tbody class="u-table-alt-palette-1-light-3 u-table-body">
-            {% for m in manager %}
+              {% for m in manager %}
               <tr style="height: 27px;">
                 <td class="u-table-cell">{{m.id}}</td>
                 <td class="u-table-cell">{{m.lastname}}</td>
@@ -285,10 +314,15 @@
             </tbody>
           </table>
         </div>
+        <div class="u-clearfix u-group-elements u-group-elements-1">
+          <a href="https://nicepage.com/html5-template" class="u-border-none u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-4-base u-btn-1">Добавить</a>
+          <a href="https://nicepage.com/html5-template" class="u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">Редактировать</a>
+          <a href="https://nicepage.com/html5-template" class="u-btn u-button-style u-custom-item u-hover-palette-2-dark-1 u-palette-2-base u-btn-3">Удалить</a>
+        </div>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-image u-section-7" id="sec-8f72">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <section class="u-align-center u-clearfix u-image u-section-6" id="sec-8f72">
+      <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-table u-table-responsive u-table-1">
           <table class="u-table-entity u-table-entity-1">
             <colgroup>
@@ -305,7 +339,7 @@
               </tr>
             </thead>
             <tbody class="u-table-alt-palette-1-light-3 u-table-body">
-            {% for s in status %}
+              {% for s in status %}
               <tr style="height: 27px;">
                 <td class="u-table-cell">{{s.id}}</td>
                 <td class="u-table-cell">{{s.status}}</td>
@@ -314,9 +348,15 @@
             </tbody>
           </table>
         </div>
+
+        <div class="u-clearfix u-group-elements u-group-elements-1">
+          <a href="https://nicepage.com/html5-template" class="u-border-none u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-4-base u-btn-1">Добавить</a>
+          <a href="https://nicepage.com/html5-template" class="u-btn u-button-style u-custom-item u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">Редактировать</a>
+          <a href="https://nicepage.com/html5-template" class="u-btn u-button-style u-custom-item u-hover-palette-2-dark-1 u-palette-2-base u-btn-3">Удалить</a>
+        </div>
       </div>
     </section>
-    
+
     
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-3be7"><div class="u-clearfix u-sheet u-sheet-1">

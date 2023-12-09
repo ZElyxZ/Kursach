@@ -37,6 +37,8 @@ class Products(models.Model):
         managed = False
         db_table = 'products'
         app_label = 'bd'
+        ordering = ['id']
+
 
 class Statuses(models.Model):
     status = models.CharField(unique=True, max_length=20, blank=True, null=True)
